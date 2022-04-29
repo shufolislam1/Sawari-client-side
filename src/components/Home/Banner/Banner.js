@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import img from '../../img/img1.jpg'
+import img from '../../../img/img1.jpg'
 
-const Home = () => {
+const Banner = () => {
     return (
         <div>
             <Carousel fade>
@@ -46,4 +46,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Banner;
