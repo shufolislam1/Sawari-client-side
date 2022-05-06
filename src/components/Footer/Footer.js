@@ -10,9 +10,9 @@ const Footer = () => {
                         <div className="col-sm-6 col-md-3 item">
                             <h3>Services</h3>
                             <ul>
-                                <li>Web design</li>
-                                <li>Development</li>
-                                <li>Hosting</li>
+                                <li>Import Sport Bikes</li>
+                                <li>Import Any Kinf of Parts</li>
+                                <li>Import 200cc Bikes (special service)</li>
                             </ul>
                         </div>
                         <div className="col-sm-6 col-md-3 item">
@@ -24,11 +24,11 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col-md-6 item text">
-                            <h3>Company Name</h3>
-                            <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                            <h3>SAWARI</h3>
+                            <p>We are always there for you.Any kind of information or discussion , please feel free to contact us.We will be happy to hear you.</p>
                         </div>
                     </div>
-                    <p className="copyright">Company Name © 2018</p>
+                    <p className="copyright">SAWARI © 2022</p>
                 </div>
             </footer>
         </div>
