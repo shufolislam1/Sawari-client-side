@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
+import Loading from '../../Loading/Loading';
 
 const Register = () => {
     const [signInWithGoogle, user2, loading2, error2] = useSignInWithGoogle(auth);
@@ -35,7 +36,7 @@ const Register = () => {
         await createUserWithEmailAndPassword(email, pass);
         await updateProfile({ displayName:name });
         console.log('Updated profile');
-        navigate('/home')
+        navigate('/')
     }
 
     let errorElement;
@@ -46,7 +47,13 @@ const Register = () => {
     }
 
     if (user2) {
-        navigate('/home')
+        navigate('/')
+    }
+    if (loading) {
+        return <Loading></Loading>
+    }
+    if (loading2) {
+        return <Loading></Loading>
     }
 
     const navigateLogin = (event) => {
@@ -54,11 +61,11 @@ const Register = () => {
     }
 
     if (user) {
-        navigate('/home');
+        navigate('/');
     }
     return (
         <div className='container w-50 mx-auto'>
-            <h2 className='text-primary text-center mt-3'>please Register</h2>
+            <h2 className='text-dark text-center mt-3'>please Register</h2>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control ref={nameRef} type="text" placeholder="Enter your name" required />
@@ -72,7 +79,7 @@ const Register = () => {
                     <Form.Control ref={passRef} type="password" placeholder="Enter password" required />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button variant="dark" type="submit">
                     Register
                 </Button>
             </Form>
@@ -80,7 +87,7 @@ const Register = () => {
 
             {errorElement}
 
-            <button onClick={() => signInWithGoogle()} className='mt-2 btn btn-primary'>Register with google</button>
+            <button onClick={() => signInWithGoogle()} className='my-2 btn btn-dark'>Register with google</button>
         </div>
     );
 

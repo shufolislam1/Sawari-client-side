@@ -9,6 +9,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loading from "../../Loading/Loading";
 
 const Login = () => {
   const [signInWithGoogle, user2, loading2, error2] = useSignInWithGoogle(auth);
@@ -36,11 +37,20 @@ const Login = () => {
   }
 
   if (user2) {
-    navigate("/home");
+    navigate("/");
   }
+  // if (user) {
+  //   navigate("/");
+  // }
 
   if (user) {
     navigate(from, { replace: true });
+  }
+  if (loading) {
+    return <Loading></Loading>;
+  }
+  if (loading2) {
+    return <Loading></Loading>;
   }
   const navigateRegister = (event) => {
     navigate("/register");
@@ -83,7 +93,7 @@ const Login = () => {
       </Form>
 
       <p className="mt-3">
-        New to Medi Life ?{" "}
+        New to SAWARI ?{" "}
         <Link
           to="/register"
           className="text-danger pe-auto text-decoration-none"
@@ -106,10 +116,7 @@ const Login = () => {
 
       {errorElement}
 
-      <button
-        onClick={() => signInWithGoogle()}
-        className="mt-2 btn btn-dark"
-      >
+      <button onClick={() => signInWithGoogle()} className="my-2 btn btn-dark">
         Login with google
       </button>
     </div>
