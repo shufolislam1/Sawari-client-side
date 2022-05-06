@@ -57,7 +57,7 @@ const Login = () => {
   };
   return (
     <div className="container w-50 mx-auto">
-      <h2 className="text-primary text-center mt-3">please login</h2>
+      <h2 className="text-dark text-center mt-3">please login</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
@@ -76,7 +76,7 @@ const Login = () => {
             required
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="dark" type="submit">
           Log In
         </Button>
         <br></br>
@@ -108,7 +108,7 @@ const Login = () => {
 
       <button
         onClick={() => signInWithGoogle()}
-        className="mt-2 btn btn-primary"
+        className="mt-2 btn btn-dark"
       >
         Login with google
       </button>
