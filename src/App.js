@@ -10,6 +10,9 @@ import Register from "./components/Login/Register/Register";
 import Blog from "./components/Blog/Blog";
 import RequireAuth from "./components/Login/RequireAuth/RequireAuth";
 import StockDetails from "./components/StockDetails/StockDetails";
+import MyItems from "./components/MyItems/MyItems";
+import AddItems from "./components/AddItems/AddItems";
+import ManageItems from "./components/ManageItems/ManageItems";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/service" element={<Service></Service>}></Route>
+        <Route path="/myitems" element={<MyItems></MyItems>}></Route>
+        <Route path="/additems" element={<AddItems></AddItems>}></Route>
+        <Route path="/manageitems" element={<ManageItems></ManageItems>}></Route>
         <Route
           path="/service/:stockId"
           element={
