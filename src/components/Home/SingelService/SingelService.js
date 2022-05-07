@@ -1,9 +1,15 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./SingelService.css";
 
 const SingelService = ({ singelService }) => {
-  const { img, name, price, description } = singelService;
+  const { id,  img, name, price, description } = singelService;
+  const navigate = useNavigate()
+  const navigateToStockDetails = (id) => {
+      navigate(`/service/${id}`)
+  }
+
   return (
     <div className="img-fluid">
       <Card style={{ width: "18rem" }}>
@@ -17,7 +23,7 @@ const SingelService = ({ singelService }) => {
             <p className="text-align-center justify-content-center">{description}</p>
             <h3>Price: {price}</h3>
           </Card.Text>
-          <Button variant="dark">Go somewhere</Button>
+          <Button onClick={() => navigateToStockDetails(id)} variant="dark">Stocks</Button>
         </Card.Body>
       </Card>
     </div>

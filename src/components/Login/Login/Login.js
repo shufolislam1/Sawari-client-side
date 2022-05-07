@@ -39,9 +39,9 @@ const Login = () => {
   if (user2) {
     navigate("/");
   }
-  // if (user) {
-  //   navigate("/");
-  // }
+  if (user) {
+    navigate("/");
+  }
 
   if (user) {
     navigate(from, { replace: true });
