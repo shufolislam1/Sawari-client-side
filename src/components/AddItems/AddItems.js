@@ -24,7 +24,7 @@ const AddItems = () => {
 
         // send data to server 
 
-        fetch('http://localhost:5000/newStock', {
+        fetch('https://safe-peak-41973.herokuapp.com/newStock', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
