@@ -6,17 +6,17 @@ import "./Service.css";
 
 const Service = () => {
   const [service, setService] = useState([]);
-  // const [pageCount, setPageCount] = useState(0);
+  const [pageCount, setPageCount] = useState(0);
 
-  // useEffect( () => {
-  //   fetch('http://localhost:5000/stockCount')
-  //   .then(res => res.json())
-  //   .then(data => {
-  //     const count = data.count;
-  //     const pages = Math.ceil(count/6)
-  //     setPageCount(pages)
-  //   })
-  // } , [])
+  useEffect( () => {
+    fetch('http://localhost:5000/stockCount')
+    .then(res => res.json())
+    .then(data => {
+      const count = data.count;
+      const pages = Math.ceil(count/6)
+      setPageCount(pages)
+    })
+  } , [])
 
   useEffect(() => {
     fetch("http://localhost:5000/stock")
