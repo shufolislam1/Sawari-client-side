@@ -11,7 +11,7 @@ const Footer = () => {
                             <h3>Services</h3>
                             <ul>
                                 <li>Import Sport Bikes</li>
-                                <li>Import Any Kinf of Parts</li>
+                                <li>Import Any Kind of Parts</li>
                                 <li>Import 200cc Bikes (special service)</li>
                             </ul>
                         </div>

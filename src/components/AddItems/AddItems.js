@@ -60,7 +60,7 @@ const AddItems = () => {
           <Form.Control ref={descriptionRef} type="text" placeholder="Enter Description" required/>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Group className="mb-3" >
           <Form.Control ref={imgRef} type="text" placeholder="Img Url" required/>
         </Form.Group>
 
