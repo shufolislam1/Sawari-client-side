@@ -5,9 +5,16 @@ import SingelService from "../SingelService/SingelService";
 import "./Service.css";
 
 const Service = () => {
-  const [service, setService] = useState([]);
   const [pageCount, setPageCount] = useState(0);
+  const [service, setService] = useState([]);
 
+  
+  useEffect(() => {
+    fetch("http://localhost:5000/stock")
+    .then((res) => res.json())
+    .then((data) => setService(data));
+  }, []);
+  
   useEffect( () => {
     fetch('http://localhost:5000/stockCount')
     .then(res => res.json())
@@ -17,13 +24,6 @@ const Service = () => {
       setPageCount(pages)
     })
   } , [])
-
-  useEffect(() => {
-    fetch("http://localhost:5000/stock")
-      .then((res) => res.json())
-      .then((data) => setService(data));
-  }, []);
-
   const minService = service.slice(0, 6);
   const navigate = useNavigate();
 
