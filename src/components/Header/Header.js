@@ -26,7 +26,7 @@ const Header = () => {
                             navbarScroll
                         >
                             <Nav.Link as={Link}  to="/">Home</Nav.Link>
-                            <Nav.Link as={Link}  to="/service">Service</Nav.Link>
+                            <Nav.Link as={Link}  to="/service">Stocks</Nav.Link>
                             {
                                 user ? 
                             <Nav.Link as={Link}  to="/myitems">My Items</Nav.Link> :

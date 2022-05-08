@@ -1,0 +1,23 @@
+.design {
+  /* margin-left: 120px; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width:576px) {
+  .design{
+    margin-left: 130px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 15rem;
+  }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px){
+  .design{
+    margin-left: 130px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 25rem;
+  }
+}

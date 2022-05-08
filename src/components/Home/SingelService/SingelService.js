@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./SingelService.css";
 
 const SingelService = ({ singelService }) => {
-  const { id,  img, name, price, description } = singelService;
+  const { _id,  img, name, price, description } = singelService;
   const navigate = useNavigate()
   const navigateToStockDetails = (id) => {
       navigate(`/service/${id}`)
@@ -23,7 +23,7 @@ const SingelService = ({ singelService }) => {
             <p className="text-align-center justify-content-center">{description}</p>
             <h3>Price: {price}</h3>
           </Card.Text>
-          <Button onClick={() => navigateToStockDetails(id)} variant="dark">Stocks</Button>
+          <Button onClick={() => navigateToStockDetails(_id)} variant="dark">Stocks</Button>
         </Card.Body>
       </Card>
     </div>

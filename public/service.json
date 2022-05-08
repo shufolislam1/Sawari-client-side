@@ -52,5 +52,59 @@
         "quantity": "09",
         "supplier_name": "Khan Ali",
         "description": "One of the best bike in its price range and it is ruling the market.Soon it going to market out.Though, demand is very high."
+    },
+    {
+        "id": 7,
+        "name": "Yamaha FZS v3",
+        "img": "https://i.ibb.co/60zpVQ7/bike7.jpg",
+        "price": "$21000",
+        "quantity": "19",
+        "supplier_name": "Ratul Ahmed",
+        "description": "Sport Bike for Racing .Also good fon highway ride. Its accelaration is quite good an built quality is in another level."
+    },
+    {
+        "id": 8,
+        "name": "Suzuki v1",
+        "img": "https://i.ibb.co/7vRsRqr/bike8.jpg",
+        "price": "$27000",
+        "quantity": "14",
+        "supplier_name": "Talukder Shajahan",
+        "description": "This is a bike for gentelman who use their bike for office purpose.It gives good milage and suitable for 3 member family."
+    },
+    {
+        "id": 9,
+        "name": "Royal Enfield 600cc",
+        "img": "https://i.ibb.co/tKqs66P/bike9.jpg",
+        "price": "$450000",
+        "quantity": "06",
+        "supplier_name": "MS Trades",
+        "description": "Best bike ever in the history of bangladesh.Higher cc bike and it is called king of the high road .Comfortable with 2 pillion."
+    },
+    {
+        "id": 10,
+        "name": "Honda Hornet",
+        "img": "https://i.ibb.co/c836yr8/bike10.jpg",
+        "price": "$29000",
+        "quantity": "27",
+        "supplier_name": "Khan Mohammad Ali",
+        "description": "Modified version of honda xblade.This is one of the best bike of honda in bangladesh.it comes with powerfull engine(200cc.)"
+    },
+    {
+        "id": 11,
+        "name": "Bajaj Pulsar Ns160",
+        "img": "https://i.ibb.co/z69sGTv/bike11.jpg",
+        "price": "$170000",
+        "quantity": "22",
+        "supplier_name": "Nafij & Brothers",
+        "description": "Accelaration of of this bike is super cool.Young Bikers most favourite bike and look is also very good."
+    },
+    {
+        "id": 12,
+        "name": "Honda CBR",
+        "img": "https://i.ibb.co/Cmq00bg/bike12.jpg",
+        "price": "$34000",
+        "quantity": "19",
+        "supplier_name": "Imtiaz Ahmed",
+        "description": "This is Thai version of honda cbr. Mostly popular for its look and design.Made in Thailand."
     }
 ]
