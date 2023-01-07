@@ -9,7 +9,7 @@ const Service = () => {
 
   
   useEffect(() => {
-    fetch("https://safe-peak-41973.herokuapp.com/stock")
+    fetch("sawari-server-side-production.up.railway.app")
     .then((res) => res.json())
     .then((data) => setService(data));
   }, []);
