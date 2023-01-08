@@ -9,7 +9,7 @@ const StockDetails = () => {
   const quantityRef = useRef("");
 
   useEffect(() => {
-    const url = `https://safe-peak-41973.herokuapp.com/stock/${stockId}`;
+    const url = `https://sawari-server.up.railway.app/stock/${stockId}`;
 
     fetch(url)
       .then((res) => res.json())
@@ -23,7 +23,7 @@ const StockDetails = () => {
     const addStock = { quantity };
 
     // send data to server
-    const url = `https://safe-peak-41973.herokuapp.com/stock/${stockId}`;
+    const url = `https://sawari-server.up.railway.app/stock/${stockId}`;
     fetch(url, {
       method: "PUT",
       headers: {

@@ -24,7 +24,7 @@ const AddItems = () => {
 
         // send data to server 
 
-        fetch('https://safe-peak-41973.herokuapp.com/newStock', {
+        fetch('https://sawari-server.up.railway.app/newStock', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

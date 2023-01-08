@@ -6,7 +6,7 @@ const useServices = () => {
 
   
     useEffect(() => {
-      fetch("sawari-server-side-production.up.railway.app")
+      fetch("https://sawari-server.up.railway.app/")
       .then((res) => res.json())
       .then((data) => setService(data));
     }, []);
